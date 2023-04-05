@@ -29,6 +29,17 @@
 
 5. You're ready to go!
 
+To run a script remotely, ensure it is named build.py. Then, from the directory _above_
+this one, run:
+
+`./remote/r.py build.py <input files>`
+
+If you would like to pass any input files to the build script (i.e. that will appear when
+'open' is called), add additional arguments to the above as described. Otherwise, don't pass
+anything else.
+
+==
+
 The build system overrides a handful of built-in Python functionalities.
 You should know about these before you write a test script. The implementation
 of each modification can be found in worker/api.py, but is briefly summarized here:
@@ -46,4 +57,5 @@ save 'out.bit' - to do this, simply add `save(out.bit)` to the end of the build 
 
 Exceptions: Raising an uncaught exception (or calling the API function error(description)
 will print an error message to the client machine before terminating the script as normal.
+
 
