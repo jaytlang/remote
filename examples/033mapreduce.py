@@ -193,8 +193,6 @@ def check_positive(value):
         raise argparse.ArgumentTypeError("%s must be a positive integer value" % value)
     return ivalue
 
-shutil.move("aux/bees.txt", "bees.txt")
-
 start = time.time()
 wc = WordCount(maptask=5, reducetask=5, path="bees.txt", crash=False)
 
