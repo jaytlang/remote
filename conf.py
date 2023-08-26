@@ -1,8 +1,8 @@
 # Configure me!
 
-client_cert = "remote/client.pem"
-client_key = "remote/client.key"
-client_ca = "remote/mitcca.pem"
+client_cert = None
+client_key = None
+client_ca = None
 
 server_hostname = "eecs-digital-51.mit.edu"
 server_port = 443
